@@ -4,7 +4,7 @@ namespace TextAdventure
 {
     public class House
     {
-         public static void house()
+         public static void Building()
         {
             string option;
 
@@ -13,7 +13,7 @@ namespace TextAdventure
             Console.WriteLine("1. Look around");
             Console.WriteLine("2. Give up and simply walk away");
             Console.WriteLine("3. Bash the door in");
-            Console.Write("Option:");
+            Console.Write("Option: ");
             option = Console.ReadLine();
             Console.Clear();
 
@@ -26,7 +26,7 @@ namespace TextAdventure
                     Console.WriteLine("Press 'Enter' to continue");
                     Console.ReadLine();
                     Console.Clear();
-                    porch();
+                    Porch();
                     break;
                 }
                 case "2":
@@ -45,19 +45,19 @@ namespace TextAdventure
                     Console.WriteLine("Press 'Enter' to continue");
                     Console.ReadLine();
                     Console.Clear();
-                    house();
+                    Building();
                     break;
                 }
                 default:
                 {
-                    Program.error();
-                    house();
+                    Program.Error();
+                    Building();
                     break;
                 }
             }
         }
 
-        public static void porch()
+        public static void Porch()
         {
             string option;
 
@@ -65,7 +65,7 @@ namespace TextAdventure
             Console.WriteLine("1. Flower pot");
             Console.WriteLine("2. The rug");
             Console.WriteLine("3. The chair");
-            Console.Write("Option:");
+            Console.Write("Option: ");
             option = Console.ReadLine().ToLower();
             Console.Clear();
 
@@ -79,7 +79,7 @@ namespace TextAdventure
                     Console.WriteLine("Press 'Enter' to continue");
                     Console.ReadLine();
                     Console.Clear();
-                    porch();
+                    Porch();
                     break;
                 }
                 case "2":
@@ -91,7 +91,7 @@ namespace TextAdventure
                     Console.WriteLine("Press 'Enter' to continue");
                     Console.ReadLine();
                     Console.Clear();
-                    interior();
+                    Interior();
                     break;
                 }
                 case "3":
@@ -101,19 +101,19 @@ namespace TextAdventure
                     Console.WriteLine("Press 'Enter' to continue");
                     Console.ReadLine();
                     Console.Clear();
-                    porch();
+                    Porch();
                     break;
                 }
                 default:
                 {
-                    Program.error();
-                    porch();
+                    Program.Error();
+                    Porch();
                     break;
                 }
             }
         }
 
-        public static void interior()
+        public static void Interior()
         {
             string option;
 
@@ -127,7 +127,7 @@ namespace TextAdventure
             Console.WriteLine("1. Look around");
             Console.WriteLine("2. Give up and simply walk away");
             Console.WriteLine("3. Bash the door in");
-            Console.Write("Option:");
+            Console.Write("Option: ");
             option = Console.ReadLine().ToLower();
             Console.Clear();
 
@@ -139,7 +139,7 @@ namespace TextAdventure
                     Console.WriteLine("Press 'Enter' to continue");
                     Console.ReadLine();
                     Console.Clear();
-                    searchHouse();
+                    SearchHouse();
                     break;
                 }
                 case "2":
@@ -157,19 +157,19 @@ namespace TextAdventure
                     Console.WriteLine("Press 'Enter' to continue");
                     Console.ReadLine();
                     Console.Clear();
-                    interior();
+                    Interior();
                     break;
                 }
                 default:
                 {
-                    Program.error();
-                    interior();
+                    Program.Error();
+                    Interior();
                     break;
                 }
             }
         }
 
-        public static void searchHouse()
+        public static void SearchHouse()
         {
             string option;
 
@@ -180,7 +180,7 @@ namespace TextAdventure
             Console.WriteLine("Do you examine the paper?");
             Console.WriteLine("1. Yes");
             Console.WriteLine("2. Leave it");
-            Console.Write("Option:");
+            Console.Write("Option: ");
             option = Console.ReadLine().ToLower();
             Console.Clear();
 
@@ -211,7 +211,7 @@ namespace TextAdventure
                     Console.WriteLine("Press 'Enter' to continue");
                     Console.ReadLine();
                     Console.Clear();
-                    leaveHouse();
+                    LeaveHouse();
                     break;
                 }
                 case "2":
@@ -222,21 +222,24 @@ namespace TextAdventure
                     Console.WriteLine("Press 'Enter' to continue");
                     Console.ReadLine();
                     Console.Clear();
-                    leaveHouse();
+                    LeaveHouse();
                     break;
                 }
                 default:
                 {
-                    Program.error();
-                    searchHouse();
+                    Program.Error();
+                    SearchHouse();
                     break;
                 }
 
             }
         }
 
-        public static void leaveHouse()
+        public static void LeaveHouse()
         {
+            Console.WriteLine("HMMM, WHAT COULD IT MEAN? THIS MIGHT BE IMPORTANT LATER...");
+            Console.WriteLine("SEEMS LIKE THERE'S NOT MUCH MORE AROUND HERE.");
+            Console.WriteLine("YOU WALK OUT OF THE HOUSE.");
             Console.WriteLine("Press 'Enter'");
             Console.ReadLine();
             Console.Clear();

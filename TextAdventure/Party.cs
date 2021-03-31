@@ -4,7 +4,7 @@ namespace TextAdventure
 {
     public class Party
     {
-        public static void partyExterior()
+        public static void PartyExterior()
         {
             string option;
 
@@ -15,7 +15,7 @@ namespace TextAdventure
             Console.WriteLine("'PaASssSSwOOOorrd?'");
             Console.WriteLine("THE MAN BEHIND THE DOOR GRUNTS.");
             Console.WriteLine("What do you answer?");
-            Console.Write("Option:");
+            Console.Write("Option: ");
             option = Console.ReadLine().ToLower();
             Console.Clear();
 
@@ -29,7 +29,7 @@ namespace TextAdventure
                 Console.WriteLine("Press 'Enter' to continue");
                 Console.ReadLine();
                 Console.Clear();
-                partyInterior();
+                Program.WinGame();
             }
 
             else if (option == "duck")
@@ -39,7 +39,6 @@ namespace TextAdventure
                 Console.WriteLine("Press 'Enter' to continue");
                 Console.ReadLine();
                 Console.Clear();
-                partyExterior();
             }
             else
             {
@@ -58,12 +57,12 @@ namespace TextAdventure
                 if (choice == "1")
                 {
                     Console.Clear();
-                    partyExterior();
+                    PartyExterior();
                 }
                 else if (choice == "2")
                 {
                     Console.Clear();
-                    House.interior();
+                    House.Interior();
                 }
                 else
                 {
@@ -71,61 +70,9 @@ namespace TextAdventure
                     Console.WriteLine("Press 'Enter' to try again.");
                     Console.ReadLine();
                     Console.Clear();
-                    partyExterior();
+                    PartyExterior();
                 }
 
-
-            }
-        }
-
-        public static void partyInterior()
-        {
-            string option;
-
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("?");
-            Console.WriteLine("1. ");
-            Console.WriteLine("2. ");
-            Console.WriteLine("3. ");
-            Console.Write("Option:");
-            option = Console.ReadLine().ToLower();
-            Console.Clear();
-
-            switch (option)
-            {
-                case "1":
-                {
-                    Console.WriteLine("");
-                    Console.WriteLine("");
-                    Console.WriteLine("Press 'Enter' to continue");
-                    Console.ReadLine();
-                    Console.Clear();
-                    Program.second();
-                    break;
-                }
-                case "2":
-                {
-                    Console.WriteLine("");
-                    Console.WriteLine("");
-                    Console.WriteLine("Press 'Enter' to continue");
-                    Console.ReadLine();
-                    Console.Clear();
-                    Program.second();
-                    break;
-                }
-                case "3":
-                {
-                    Console.WriteLine("");
-                    Console.WriteLine("");
-                    Console.WriteLine("Press 'Enter' to continue");
-                    Console.ReadLine();
-                    Console.Clear();
-                    Program.second();
-                    break;
-
-                }
 
             }
         }

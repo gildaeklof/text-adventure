@@ -65,7 +65,7 @@ namespace TextAdventure
                 }
                 default:
                 {
-                    Program.error();
+                    Program.Error();
                     Forest();
                     break;
                 }
@@ -138,7 +138,7 @@ namespace TextAdventure
                 }
                 default:
                 {
-                    Program.error();
+                    Program.Error();
                     Swamp();
                     break;
                 }
@@ -205,6 +205,7 @@ namespace TextAdventure
                     Console.WriteLine("AND IT SMASHES DOWN TO THE ROCKY GROUND, CAUSING A LOUD CRASH.");
                     Console.WriteLine(
                         "BEFORE YOU CAN BLINK, THE PRIEST IS STANDING ON THE DOORSTEP WITH A SHOTGUN IN HIS HANDS.");
+                    Console.WriteLine("(⌐■_■)--︻╦╤─");
                     Console.WriteLine("You will have to turn back to the house and choose a different way.");
                     Console.WriteLine("Press 'Enter' to continue");
                     Console.ReadLine();
@@ -214,7 +215,7 @@ namespace TextAdventure
                 }
                 default:
                 {
-                    Program.error();
+                    Program.Error();
                     Cemetery();
                     break;
                 }
@@ -286,7 +287,7 @@ namespace TextAdventure
                 }
                 default:
                 {
-                    Program.error();
+                    Program.Error();
                     Lake();
                     break;
                 }
@@ -302,9 +303,9 @@ namespace TextAdventure
             Console.WriteLine("BUT IT DID MENTION IT WAS GOING TO TAKE PLACE IN AN OLD INDUSTRIAL AREA.");
             Console.WriteLine("STANDING ON THE MAIN STREET CROSSING, THE ROAD SPLITS UP IN THREE DIRECTIONS.");
             Console.WriteLine("Which way do you choose?");
-            Console.WriteLine("1. WEST");
-            Console.WriteLine("2. NORTH");
-            Console.WriteLine("3. EAST");
+            Console.WriteLine("1. WEST.");
+            Console.WriteLine("2. NORTH.");
+            Console.WriteLine("3. EAST.");
             Console.Write("Option: ");
             option = Console.ReadLine();
             Console.Clear();
@@ -325,7 +326,7 @@ namespace TextAdventure
                     Console.WriteLine("Press 'Enter' to continue");
                     Console.ReadLine();
                     Console.Clear();
-                    Party.partyExterior();
+                    Party.PartyExterior();
                     break;
                 }
                 case "2":
@@ -362,7 +363,7 @@ namespace TextAdventure
                 }
                 default:
                 {
-                    Program.error();
+                    Program.Error();
                     Town();
                     break;
                 }
