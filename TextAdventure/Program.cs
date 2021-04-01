@@ -190,6 +190,7 @@ namespace TextAdventure
 
             Console.WriteLine("YOU DECIDE TO KEEP THE LETTER EVEN THOUGH IT ISN'T ADDRESSED TO YOU. YOU NAUGHTY LIL' FELLA.");
             Console.WriteLine("Press 'Enter' to continue");
+            Console.ReadLine();
             Console.Clear();
             Fourth();
         }
