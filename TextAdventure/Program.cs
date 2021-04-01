@@ -159,19 +159,37 @@ namespace TextAdventure
 
         public static void Third()
         {
+            string option;
+
             Console.WriteLine("YOU REACH OUT YOUR HAND TO GRAB THE THING STICKING OUT");
             Console.WriteLine("OF THE MAILBOX. IT'S A LETTER, YOU OPEN IT TO READ THE FOLLOWING:");
             Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine(
-                "YOU DECIDE TO KEEP THE LETTER EVEN THOUGH IT ISN'T ADDRESSED TO YOU. YOU NAUGHTY LIL' FELLA.");
-            Console.WriteLine("Press 'Enter'");
-            Console.ReadLine();
+            Console.WriteLine("    _________________________________________________________");
+            Console.WriteLine("(O)==)><><><><><><><><><><><><><><><><><><><><><><><><><><><)==(O)");
+            Console.WriteLine("    ''''''''''''''''''''''''''''''''''''''''''''''''''''''''' ");
+            Console.WriteLine("    (                                                      (  ");
+            Console.WriteLine("     )                                                      ) ");
+            Console.WriteLine("    (                  Hear Ye, Hear Ye!                   (  ");
+            Console.WriteLine("    |                                                      |  ");
+            Console.WriteLine("    |       Let it be known that on this very night        |  ");     
+            Console.WriteLine("    (       we shall be having a feast in town,            (  ");
+            Console.WriteLine("     )      and you are cordially invited to partake        ) ");
+            Console.WriteLine("    (       in the festivities.                            (  ");
+            Console.WriteLine("    |                                                      |  ");
+            Console.WriteLine("    |       You will find the address below.               |  ");
+            Console.WriteLine("    (	   (terms and conditions apply)                   (  ");
+            Console.WriteLine("     )	                                                   ) ");
+            Console.WriteLine("    (       The big house,                                 (  ");
+            Console.WriteLine("    |       Industrial area,                	           |");
+            Console.WriteLine("    |       Town                                           |  ");
+            Console.WriteLine("    (                                                      (  ");
+            Console.WriteLine("     )                                                      ) ");
+            Console.WriteLine("    (______________________________________________________(  ");
+            Console.WriteLine("(O)==)><><><><><><><><><><><><><><><><><><><><><><><><><><><)==(O)");
+            Console.WriteLine("    '''''''''''''''''''''''''''''''''''''''''''''''''''''''''");
+
+            Console.WriteLine("YOU DECIDE TO KEEP THE LETTER EVEN THOUGH IT ISN'T ADDRESSED TO YOU. YOU NAUGHTY LIL' FELLA.");
+            Console.WriteLine("Press 'Enter' to continue");
             Console.Clear();
             Fourth();
         }
