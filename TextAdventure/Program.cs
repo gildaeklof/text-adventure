@@ -160,14 +160,14 @@ namespace TextAdventure
         public static void Third()
         {
             string option;
-
+            
             Console.WriteLine("YOU REACH OUT YOUR HAND TO GRAB THE THING STICKING OUT");
             Console.WriteLine("OF THE MAILBOX. IT'S A LETTER, YOU OPEN IT TO READ THE FOLLOWING:");
             Console.WriteLine("");
             Console.WriteLine("    _________________________________________________________");
             Console.WriteLine("(O)==)><><><><><><><><><><><><><><><><><><><><><><><><><><><)==(O)");
             Console.WriteLine("    ''''''''''''''''''''''''''''''''''''''''''''''''''''''''' ");
-            Console.WriteLine("    (                                                      (  ");
+            Console.WriteLine("    (                                             ⏀        (  ");
             Console.WriteLine("     )                                                      ) ");
             Console.WriteLine("    (                  Hear Ye, Hear Ye!                   (  ");
             Console.WriteLine("    |                                                      |  ");
